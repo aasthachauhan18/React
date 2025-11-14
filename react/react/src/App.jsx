@@ -8,6 +8,10 @@ import Like from './component/Events/States/Like'
 import Isvisible from './component/Events/States/Isvisible'
 import Color from './component/Events/States/Color'
 import Counters from './component/Events/States/Counter'
+import Login from './component/ConditionalRender/Login'
+import Display from './component/ConditionalRender/Display'
+import Component from './component/ConditionalRender/Component'
+import DynamicGreeting from './component/ConditionalRender/Greeting'
 
 
 
@@ -20,16 +24,20 @@ function App() {
      Hello
      <Navbar/>
      {/* <Button/> */}
-     <Input/>
+     {/* <Input/> */}
      {/* <Userlist/> */}
-     <FormData/>
+     {/* <FormData/> */}
      <br />
      {/* <Like/> */}
      <br />
      {/* <Isvisible/> */}
      <br />
      {/* <Color/> */}
-     <Counters/>
+     {/* <Counters/> */}
+     {/* <Login/> */}
+     {/* <Display/> */}
+     {/* <Component/> */}
+     <DynamicGreeting/>
   
     </>
   )

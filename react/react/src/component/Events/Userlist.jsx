@@ -5,7 +5,7 @@ function Userlist() {
     const Users = ["Aastha","Mahi","Bharvi","Nitu"]
 
     const greetUser = ()=>{
-        alert(`Hello ${Users}`)
+        alert(`Hello ${Users[i]}`)
     }
   return (
     <div>

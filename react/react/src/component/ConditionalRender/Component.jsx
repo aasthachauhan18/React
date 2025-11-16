@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import FormData from "../Events/FormData";
-import Color from "../Events/States/Color";
+import Color from "../States/Color";
 
 
 function Component() {

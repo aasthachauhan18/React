@@ -4,14 +4,16 @@ import Button from './component/Events/Button'
 import Input from './component/Events/Input'
 import Userlist from './component/Events/Userlist'
 import FormData from './component/Events/FormData'
-import Like from './component/Events/States/Like'
-import Isvisible from './component/Events/States/Isvisible'
-import Color from './component/Events/States/Color'
-import Counters from './component/Events/States/Counter'
+import Like from './component/States/Like'
+import Isvisible from './component/States/Isvisible'
+import Color from './component/States/Color'
+import Counters from './component/States/Counter'
 import Login from './component/ConditionalRender/Login'
 import Display from './component/ConditionalRender/Display'
 import Component from './component/ConditionalRender/Component'
-import DynamicGreeting from './component/ConditionalRender/Greeting'
+import Greeting from './component/ConditionalRender/Greeting'
+import Name from './component/Lists/Name'
+import Unique from './component/Lists/Unique'
 
 
 
@@ -23,21 +25,23 @@ function App() {
     <>
      Hello
      <Navbar/>
-     {/* <Button/> */}
-     {/* <Input/> */}
-     {/* <Userlist/> */}
-     {/* <FormData/> */}
+     <Button/>
+     <Input/>
+     <Userlist/>
+     <FormData/>
      <br />
-     {/* <Like/> */}
+     <Like/>
      <br />
-     {/* <Isvisible/> */}
+     <Isvisible/>
      <br />
-     {/* <Color/> */}
-     {/* <Counters/> */}
-     {/* <Login/> */}
-     {/* <Display/> */}
-     {/* <Component/> */}
-     <DynamicGreeting/>
+     <Color/>
+     <Counters/>
+     <Login/>
+     <Display/>
+     <Component/>
+     <Name/>
+     <Unique/>
+     {/* <Greeting/> */}
   
     </>
   )

@@ -14,6 +14,7 @@ import Component from './component/ConditionalRender/Component'
 import Greeting from './component/ConditionalRender/Greeting'
 import Name from './component/Lists/Name'
 import Unique from './component/Lists/Unique'
+import SimpleTodo from './component/Lists/SimpleTodo'
 
 
 
@@ -41,6 +42,7 @@ function App() {
      <Component/>
      <Name/>
      <Unique/>
+     <SimpleTodo/>
      {/* <Greeting/> */}
   
     </>

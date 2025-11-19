@@ -15,6 +15,8 @@ import Greeting from './component/ConditionalRender/Greeting'
 import Name from './component/Lists/Name'
 import Unique from './component/Lists/Unique'
 import SimpleTodo from './component/Lists/SimpleTodo'
+import LoginForm from './component/FormValidation/LoginForm'
+import ContactForm from './component/FormValidation/ContactForm'
 
 
 
@@ -43,6 +45,8 @@ function App() {
      <Name/>
      <Unique/>
      <SimpleTodo/>
+     <LoginForm/>
+     <ContactForm/>
      {/* <Greeting/> */}
   
     </>

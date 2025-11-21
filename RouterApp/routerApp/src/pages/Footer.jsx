@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
 
-
-
 function Footer() {
   return (
     <div>
@@ -141,7 +139,11 @@ function Footer() {
           <ul className="list-unstyled d-flex">
             {" "}
             <li className="ms-3">
-              <Link className="link-body-emphasis" to="#" aria-label="Instagram">
+              <Link
+                className="link-body-emphasis"
+                to="#"
+                aria-label="Instagram"
+              >
                 <svg className="bi" width="24" height="24">
                   <use xlink:to="#instagram"></use>
                 </svg>

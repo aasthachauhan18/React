@@ -6,6 +6,9 @@ import Service from "../pages/Service";
 import Contact from "../pages/Contact";
 import Profile from "../pages/Profile";
 import Product from "../pages/Product";
+import Learning from "../LearningModule/Learning";
+import Foundation from "../LearningModule/Foundation/Foundation";
+import RouterComp from "../LearningModule/RouterCompo/RouterComp";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -58,6 +61,15 @@ const router = createBrowserRouter([
     {
     path: "/product/:id",         
     element: <><Navbar/><Product/></>,
+  }, 
+{
+    path: "/learning",         
+    element: <><Navbar/><Learning/><Footer/></>,
+    children: [
+          { path: "foundation", Component: Foundation },
+          { path: "router", Component: RouterComp},
+        ],
+
   },
 ]);
 

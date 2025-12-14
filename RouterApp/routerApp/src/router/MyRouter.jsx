@@ -9,6 +9,12 @@ import Product from "../pages/Product";
 import Learning from "../LearningModule/Learning";
 import Foundation from "../LearningModule/Foundation/Foundation";
 import RouterComp from "../LearningModule/RouterCompo/RouterComp";
+import Inro from "../LearningModule/Foundation/FoundationCompo/Inro";
+import jsxCompo from "../LearningModule/Foundation/FoundationCompo/jsxCompo";
+
+// const  = React.lazy(() => import("./pages/Dashboard"));
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -49,7 +55,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/profile/username:",
+    path: "/profile/:username",
     element: (
       <>
         <Navbar />
@@ -59,15 +65,19 @@ const router = createBrowserRouter([
   },
   
     {
-    path: "/product/:id",         
+    path: "/product",         
     element: <><Navbar/><Product/></>,
   }, 
 {
     path: "/learning",         
     element: <><Navbar/><Learning/><Footer/></>,
     children: [
-          { path: "foundation", Component: Foundation },
-          { path: "router", Component: RouterComp},
+          { path: "foundation", Component: Foundation,children: [
+          { path: "Intro", Component: Inro },
+          { path: "jsx", Component: jsxCompo },
+          
+        ], },
+          { path: "router", Component: RouterComp ,},
         ],
 
   },

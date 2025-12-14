@@ -57,7 +57,18 @@ function Navbar() {
                   }} to="/contact">
                   Contact
                 </NavLink>
-              </li><li className="nav-item">
+              </li>
+               <li className="nav-item">
+                 <NavLink
+                  className={(e) => {
+                    return e.isActive
+                      ? "nav-link active text-success"
+                      : "nav-link active";
+                  }} to="/product">
+                  product
+                </NavLink>
+              </li>
+              <li className="nav-item">
                  <NavLink
                   className={(e) => {
                     return e.isActive

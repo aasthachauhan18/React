@@ -250,10 +250,7 @@ function Product() {
   }
 ]
 
-  const handleView = (id) => {
-        navigate(`/product/${id}`);
-    }
-
+  const {id} = useParams();
 
   return (
      <>
@@ -269,7 +266,7 @@ function Product() {
                                     alt="product"
                                 />
                                 <div className="card-body text-center">
-                                    <h5 className="card-title">Product {item.id}</h5>
+                                    <h5 className="card-title">Product {id}</h5>
                                     <button className="btn btn-primary" onClick={() => handleView(item.id)}
                                     >View</button>
                                 </div>

@@ -1,0 +1,111 @@
+body {
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.input-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  width: 100%;
+  background: #0097a7;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filter-box {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.filter-box button {
+  padding: 10px 30px;
+  border: none;
+  background: #0097a752;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filter-box .active {
+  background: #0097a7;
+  color: white;
+}
+
+.list {
+  margin-top: 10px;
+}
+
+.task {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.done {
+  text-decoration: line-through;
+  color: red;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.delete-done,
+.delete-all {
+  width: 48%;
+  background: #e53935;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bottom-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

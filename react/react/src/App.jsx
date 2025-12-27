@@ -14,10 +14,15 @@ import Component from './component/ConditionalRender/Component'
 import Greeting from './component/ConditionalRender/Greeting'
 import Name from './component/Lists/Name'
 import Unique from './component/Lists/Unique'
-import SimpleTodo from './component/Lists/SimpleTodo'
 import LoginForm from './component/FormValidation/LoginForm'
 import ContactForm from './component/FormValidation/ContactForm'
+import Todo from './pages/Todo'
 
+import SimpleTodo from './component/Lists/SimpleTodo'
+import CountMemoCompSlow from './component/useMemo/calculationSlow'
+// import CountMemoCompFast from './component/useMemo/calculationFast'
+import Box from './UseLayOut/Box'
+import BoxHeight from './UseLayOut/BoxHeight'
 
 
 
@@ -26,7 +31,7 @@ function App() {
 
   return (
     <>
-     Hello
+     {/* Hello
      <Navbar/>
      <Button/>
      <Input/>
@@ -44,12 +49,19 @@ function App() {
      <Component/>
      <Name/>
      <Unique/>
-     <SimpleTodo/>
      <LoginForm/>
      <ContactForm/>
      {/* <Greeting/> */}
+
+     {/* <Todo/> 
   
+     <SimpleTodo/>
+     <CountMemoCompSlow/>
+     <CountMemoCompFast/> */}
+     {/* <Box/> */}
+     <BoxHeight/>
     </>
+    
   )
 }
 

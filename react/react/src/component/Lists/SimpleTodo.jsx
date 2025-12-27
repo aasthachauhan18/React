@@ -1,8 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function SimpleTodo() {
   const [task, setTask] = useState("");
   const [list, setList] = useState([]);
+
+
+  useEffect(() => {
+      const saved = JSON.parse(localStorage.getItem(""));
+      if (saved) setList(saved);
+    }, []);
+  
+    
+    useEffect(() => {
+      localStorage.setItem("tasks", JSON.stringify(list));
+    }, [list]);
+  
 
   const addTask = () => {
     if (task.trim() === "") return;
